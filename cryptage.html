@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" /> 
+        <title>
+            Cryptage et décryptage
+        </title>
+        <meta name="description" content="" /> 
+        <meta name="keywords" content="" lang="fr"/>
+        <meta name="keywords" content="" lang="en"/>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body id="up">
+        <div class="container-fluid sec">
+            <header class="row">
+                <div class="row col-2 col-lg-3 align-items-center justify-content-between">
+                    <img src="images/logo.png" width="200px" height="100px" class="d-none d-lg-block"/>
+                </div>
+                <nav class="navbar navbar-expand col-10 col-lg-9 justify-content-center">	
+                    <ul class="navbar-nav row justify-content-around">	
+                        <li	class="nav-item">	<a	class="nav-link"	href="index.html"><strong>Accueil</strong></a>	</li>	
+                        <li	class="nav-item">	<a	class="nav-link"		href="#contexte"><strong>Contexte</strong></a></li>	
+                        <li	class="nav-item">	<a	class="nav-link"		href="#action"><strong>Actions</strong></a>	 </li>
+                        <li	class="nav-item">	<a	class="nav-link"		href="#resultats"><strong>Résultats</strong></a>	 </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1>Cryptage et décryptage</h1>
+                <section id="contexte" class="row justify-content-center">
+                    <img src="images/resCryp.PNG" width="508" height="270" alt="resultat" class="offset-lg-1"/>
+                     <div class="col-lg-5 offset-lg-1">
+                        <p>Ce projet a été mis en oeuvre dans le cadre de l'option Informatique et Sciences du Numérique, au lycée. Nous avions fait le choix, à quatre, de mettre en oeuvre un service en ligne permettant de crypter des messages et de les décrypter. Nous nous sommes répartis les tâches pour la réalisation, c'est pourquoi je me suis occupé de développer le site web servant de support au projet.</p>
+                    </div>
+                </section>
+                <section id="action">
+                    <h2>ACTIONS REALISEES</h2>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Recherche de la méthode de cryptage</h3>
+                            <p>Nous avons recherché sur internet différents algorithmes qui nous permettraient de convertir les caractères. Parmis ceux-ci, nous avions le code de César, qui consiste en décaler les caractères de la table ASCII, et la conversion de ceux-ci en hexadécimal, en binaire, et même en morse.</p>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <h3>Développement</h3>
+                            <p>La page web dévelopée est très simple. En raison de nos faibles connaissances en HTML et CSS, elle n'est constituée que de deux zones de texte, dont l'une est en lecture seule, et de deux boutons.</p>
+                            <p>Un programme JavaScript, écrit pas les autres membres du groupe, a été intégré à la page et relié aux boutons. Le premier, 'Crypter', permet de retourner dans la zone du bas le message passé dans la zone du haut modifié à l'aide des algorithmes cités ci-dessus. Le second bouton, 'Décrypter', renvoie le message d'origine à partir de sa version cryptée.</p>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <h3>Exemple</h3>
+                            <figure>
+                                <img src="images/exCryp1.PNG" width="300" height="200" alt="resultat" class="offset-lg-1"/>
+                                <figcaption>Cryptage</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/exCryp2.PNG" width="300" height="200" alt="resultat" class="offset-lg-1"/>
+                                <figcaption>Décryptage</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section id="resultats">
+                    <h2>RESULTATS</h2>
+                    <p class="col-lg-8 offset-lg-2">Malheureusement, le code ne fonctionne pas et le texte reçu lorsque l'on écrit un message dans la zone du haut ne retourne pas le même message lorsqu'on tente de le décrypter. Cela nous a appris l'importance de la rigueur lorsque l'on met en oeuvre un projet, en articulier dans le cadre de l'informatique.</p>
+                </section>
+            </main>
+            <footer class="row justify-content-between align-items-center">
+                <div class="row col-2">
+                    <a href="https://www.linkedin.com/in/l%C3%A9o-salaun-9b45301b7/"><img src="images/linkedin.png" width="50px" height="50px"/></a>
+                </div>
+                <p class="col-5 col-sm-3 col-lg-3">Tel. 06 46 89 58 25</p>
+                <address class="col-2 col-lg-2 offset-lg-1"><a href="mailto:salaunleo29@gmail.com" class="align-items-center"><strong>Envoyer un mail</strong></a></address>
+                <a href="#up" class="col-2 col-lg-2 offset-lg-2"><strong>Haut de page</strong></a>
+            </footer>
+        </div>
+    </body>
+</html>

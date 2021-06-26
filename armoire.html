@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" /> 
+        <title>
+            Cryptage et décryptage
+        </title>
+        <meta name="description" content="" /> 
+        <meta name="keywords" content="" lang="fr"/>
+        <meta name="keywords" content="" lang="en"/>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body id="up">
+        <div class="container-fluid sec">
+            <header class="row">
+                <div class="row col-2 col-lg-3 align-items-center justify-content-between">
+                    <img src="images/logo.png" width="200px" height="100px" class="d-none d-lg-block"/>
+                </div>
+                <nav class="navbar navbar-expand col-10 col-lg-9 justify-content-center">	
+                    <ul class="navbar-nav row justify-content-around">	
+                        <li	class="nav-item">	<a	class="nav-link"	href="index.html"><strong>Accueil</strong></a>	</li>	
+                        <li	class="nav-item">	<a	class="nav-link"		href="#contexte"><strong>Contexte</strong></a></li>	
+                        <li	class="nav-item">	<a	class="nav-link"		href="#action"><strong>Actions</strong></a>	 </li>
+                        <li	class="nav-item">	<a	class="nav-link"		href="#resultats"><strong>Résultats</strong></a>	 </li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <h1>Armoire autonome</h1>
+                <section id="contexte" class="row justify-content-center">
+                    <img src="images/resArm.JPG" width="270" height="270" alt="resultat" class="offset-lg-1"/>
+                     <div class="col-lg-5 offset-lg-1">
+                        <p>Ici est détaillé le projet de Terminale en Sciences de l'Ingénieur que je devais mener avec deux autres élèves. Le sujet était au choix et devait contenir une programmation, une partie construction de la structure, et une partie choix du moteur. Chacune de ces parties doit être menée à travers une simulation et une réalisation. Le sujet que nous avions choisi était une armoire automatique, dont l'utilisateur ppourra choisir le compartiment auquel il veut accéder.</p>
+                    </div>
+                </section>
+                <section id="action">
+                    <h2>ACTIONS REALISEES</h2>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h3>Elaboration du système</h3>
+                            <p>La structure de l'armoire est modélisée via le schéma ci-dessous.</p>
+                            <p>Les compartiments en question seront chacuns disponibles à l'aide d'un code, donné via un pavé numérique. Chaque compartiment serait alors relié à un code particulier. Lorsqu'un code est saisi et validé, s'il fait partie des codes existants, les compartiments tournent afin de mettre celui demandé à disposition de l'utilisateur. Si le code rentré n'existe pas, alors un écran LCD affichera une erreur.</p>
+                            <p>Nous nous sommes répartis les tâches et il a été décidé que je m'occuperai de la programmation de l'armoire.</p>
+                            <img src="images/schemArm.png" width="300" height="300" alt="resultat" class="offset-lg-1"/>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <h3>Simulation</h3>
+                            <p>J'ai fait le choix de simuler le système à l'aide du langage de programmation Python.</p>
+                            <p>Le programme en question initialise quatre codes différents ainsi que les compartiments associés, numérotés de 1 à 4. Le code est ensuite demandé à l'utilisateur qui doit en donner un. Si le code n'existe pas, le programme renvoie une erreur. Dans le cas contraire, le numéro du compartiement est affiché ainsi que le nombre de quarts de tours en sens anti-horaire nécessaires afin de mettre celui-ci à disposition.</p>
+                            <p>La position de chaque compartiment est stockée dans un fichier texte mis à jour à chauqe fin de programme et rouvert dès que celui-ci est lancé. La position des compartiments est modélisée par les numéros de ceux-ci (1 à 4) placés dans l'ordre de leur emplacement par rapport à l'ouverture de l'armoire, en sens horaire. Par exemple, 2 - 3 - 4 - 1 signifie que le compartiment actuellement à disposition est le second, et que ceux qui suivent en sens horaire sont le troisière, le quatrième, et le premier.</p>
+                            <p>Le nombre de quarts de tours nécessaires pour mettre à disposition le bon compartiment est calculé via la position de celui-ci. Dans le cas où le compartiment demandé se trouve en dernière position, afin d'économiser de l'énergie et du temps, le programme affichera -1, signifiant que le système doit effectuer un quart de tour dans le sens inverse.</p>
+                        </div>
+                        <div class="col-lg-3 offset-lg-1">
+                            <h3>Réalisation</h3>
+                            <p>Le programme devait être adapté pour une carte Arduino. C'est la raison pour laquelle j'ai choisi d'utiliser le langage C. Avant d'écrire et de tester le code sur Arduino, j'ai préféré le rédiger pour un système virtuel sur le site Tinkercad.</p>
+                            <p>Cependant, en raison de ma méconnaissance du langage à l'époque et au manque de matériel, je n'ai pas pu terminer le programme dans le temps imparti, bien que cela m'ait permis d'aiguiser mon esprit logique.</p>
+                            <img src="images/exReaDom2.jpg" width="250" height="300" alt="resultat" class="offset-lg-1"/>
+                        </div>
+                    </div>
+                </section>
+                <section id="resultats">
+                    <h2>RESULTATS</h2>
+                    <p class="col-lg-8 offset-lg-2">Le projet n'a pas pu être finalisé dans les temps. Cela est dû principalement à la crise de la COVID-19 qui a grandement diminué nos moyens et nous a retardé dans la réalisation des tâches. Cette expérience nous a néanmoins permis de nous améliorer dans différents domaines. Pour ce qui est de la simulation en langage Python, il s'agissait du programme le plus ambitieux que j'avais à réaliser à l'époque. Pour cette partie, les résultats étaient concluants et cela m'a permis de me forger une base solide en termes de programmation.</p>
+                </section>
+            </main>
+            <footer class="row justify-content-between align-items-center">
+                <div class="row col-2">
+                    <a href="https://www.linkedin.com/in/l%C3%A9o-salaun-9b45301b7/"><img src="images/linkedin.png" width="50px" height="50px"/></a>
+                </div>
+                <p class="col-5 col-sm-3 col-lg-3">Tel. 06 46 89 58 25</p>
+                <address class="col-2 col-lg-2 offset-lg-1"><a href="mailto:salaunleo29@gmail.com" class="align-items-center"><strong>Envoyer un mail</strong></a></address>
+                <a href="#up" class="col-2 col-lg-2 offset-lg-2"><strong>Haut de page</strong></a>
+            </footer>
+        </div>
+    </body>
+</html>

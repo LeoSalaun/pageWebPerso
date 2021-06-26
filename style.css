@@ -1,0 +1,245 @@
+/* POLICES */
+
+@font-face {
+    font-family: 'quicksand';
+    src: url('polices/Quicksand/Quicksand-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'pettingill';
+    src: url('polices/Petingill/PettingillCF-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'girassol';
+    src: url('polices/Girassol/Girassol-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* APPARENCE */
+
+body {
+    text-align: justify;
+    font-family: quicksand;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+header, footer {
+    background-color: #b39bbf;
+    padding: 5px 20px;
+    width: 104%;
+}
+
+header nav {
+    width: 90%;
+}
+
+header ul {
+    width: 100%;
+}
+
+header li {
+    margin: 0 3%;
+}
+
+a:link {
+    text-decoration: none;
+    color: #b81200;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #b81200;
+}
+
+a:active {
+    text-decoration: none;
+    color: #b81200;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #310047;
+}
+
+header a:link, footer a:link {
+    color: #421611;
+}
+
+header a:active, footer a:active {
+    color: #421611;
+}
+
+header a:visited, footer a:visited {
+    color: #421611;
+}
+
+header a:hover, footer a:hover {
+    color: #f6cfcc;
+}
+
+.marge {
+    margin: 0 4%;
+    padding: 1%;
+    text-align: center;
+}
+
+.marge h4 {
+    font-size: 1.25em;
+}
+
+h1 {
+    margin: 1% 0 0 1%;
+}
+
+h1, h2 {
+    font-family: pettingill;
+}
+
+h3 {
+    font-family: girassol;
+}
+
+article {
+    border-style: solid;
+    border-width: 5px;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.droite {
+    text-align: right;
+}
+
+section {
+    background-color: white;
+    color: #421611;
+    padding: 2%;
+}
+
+article {
+    background-color: #f6cfcc;
+    color: #310047;
+    margin: 2%;
+    padding: 1%;
+    width: 90%;
+}
+
+article img {
+    margin: 0 0 5% 0;
+}
+
+.rouge, #action, #chaine {
+    background-color: #f6cfcc;
+    color: #310047;
+    padding: none;
+    margin: none;
+    width: 100%;
+}
+
+.rouge article {
+    background-color: white;
+    color: #421611;
+}
+
+.mauve {
+    background-color: #333333;
+    color: white;
+}
+
+#interets article {
+    padding-bottom: 0;
+}
+
+#competences article {
+    width: 87%;
+}
+
+main > a {
+    margin-left: 5%;
+}
+
+/* POSITIONNEMENTS */
+
+body {
+    position: relative;
+    padding: 110px 0 50px 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+}
+
+.droite {
+    position: relative;
+    left: 5%;
+}
+
+#competences article {
+    position: relative;
+    left: 5%;
+}
+
+address, footer p {
+    position: relative;
+    top: 8px;
+}
+
+/* COMPLEMENTS RESPONSIVITE */
+
+@media screen and (max-width: 992px)
+{
+    body {
+        padding: 150px 0 50px 0;
+    }
+    
+    section p {
+        font-size: 1.25em;
+    }
+    
+    #competences article {
+        left: -3%;
+        margin-left: none;
+        width: 102%;
+    }
+    
+    .droite {
+        left: 1%;
+    }
+}
+
+/* COMPLEMENTS PAGES SECONDAIRES PAGES SECONDAIRES */
+
+.sec img {
+    border-style: solid;
+    border-width: 5px;
+}
+
+.sec header img, .sec footer img, #chaines img {
+    border: none;
+}
