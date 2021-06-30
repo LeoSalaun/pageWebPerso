@@ -28,11 +28,22 @@
     font-style: normal;
 }
 
+
+
+
+
+@font-face {
+    font-family: 'avara';
+    src: url('polices/Avara/Avara.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* APPARENCE */
 
 body {
     text-align: justify;
-    font-family: quicksand;
+    font-family:avara;
 }
 
 .container-fluid {
@@ -42,9 +53,10 @@ body {
 }
 
 header, footer {
-    background-color: #b39bbf;
+    background-color: #e7def8;
     padding: 5px 20px;
     width: 104%;
+    font-size: 1.5em;
 }
 
 header nav {
@@ -92,7 +104,7 @@ header a:visited, footer a:visited {
 }
 
 header a:hover, footer a:hover {
-    color: #f6cfcc;
+    color: #b81200;
 }
 
 .marge {
@@ -103,6 +115,10 @@ header a:hover, footer a:hover {
 
 .marge h4 {
     font-size: 1.25em;
+}
+
+.marge p {
+    font-size: 1.5em;
 }
 
 h1 {
@@ -118,8 +134,6 @@ h3 {
 }
 
 article {
-    border-style: solid;
-    border-width: 5px;
     margin: 25px 0;
     padding: 0;
 }
@@ -135,7 +149,7 @@ section {
 }
 
 article {
-    background-color: #f6cfcc;
+    background-color: #fbefee;
     color: #310047;
     margin: 2%;
     padding: 1%;
@@ -147,7 +161,7 @@ article img {
 }
 
 .rouge, #action, #chaine {
-    background-color: #f6cfcc;
+    background-color: #fbefee;
     color: #310047;
     padding: none;
     margin: none;
@@ -168,8 +182,17 @@ article img {
     padding-bottom: 0;
 }
 
+#interets article div div {
+    padding: 5px;
+}
+
 #competences article {
     width: 87%;
+}
+
+#competences article img {
+    border-style: solid;
+    border-width: 3px;
 }
 
 main > a {
@@ -215,7 +238,7 @@ address, footer p {
 @media screen and (max-width: 992px)
 {
     body {
-        padding: 150px 0 50px 0;
+        padding: 150px 0 97px 0;
     }
     
     section p {
@@ -228,12 +251,30 @@ address, footer p {
         width: 102%;
     }
     
+    #competences article a {
+        text-align: center;
+    }
+    
+    .prog img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .web img {
+        width: 460px;
+        height: 230px;
+    }
+    
     .droite {
         left: 1%;
     }
+    
+    footer {
+        font-size: 1em;
+    }
 }
 
-/* COMPLEMENTS PAGES SECONDAIRES PAGES SECONDAIRES */
+/* COMPLEMENTS PAGES SECONDAIRES */
 
 .sec img {
     border-style: solid;
