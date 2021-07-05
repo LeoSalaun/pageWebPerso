@@ -42,7 +42,7 @@
 /* APPARENCE */
 
 body {
-    text-align: justify;
+    text-align: left;
     font-family:avara;
 }
 
@@ -131,6 +131,14 @@ h1, h2 {
 
 h3 {
     font-family: girassol;
+}
+
+h5 {
+    height: 20%;
+}
+
+#presentation, #contexte, #action {
+    text-align: justify;
 }
 
 article {
