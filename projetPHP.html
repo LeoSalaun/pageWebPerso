@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" /> 
         <title>
-            Cryptage et décryptage
+            Collection de films
         </title>
         <meta name="description" content="" /> 
         <meta name="keywords" content="" lang="fr"/>
@@ -30,34 +30,31 @@
                 </nav>
             </header>
             <main>
-                <h1>Cryptage et décryptage</h1>
+                <h1>Collection de films</h1>
                 <section id="contexte" class="row justify-content-center">
-                    <img src="images/resCryp.PNG" width="508" height="270" alt="resultat" class="offset-lg-1"/>
-                     <div class="col-lg-5 offset-lg-1">
-                        <p>Ce projet a été mis en oeuvre dans le cadre de l'option Informatique et Sciences du Numérique, au lycée. Nous avions fait le choix, à quatre, de mettre en oeuvre un service en ligne permettant de crypter des messages et de les décrypter. Nous nous sommes répartis les tâches pour la réalisation, c'est pourquoi je me suis occupé de développer le site web servant de support au projet.</p>
+                     <div>
+                        <p>Dans le cadre de notre enseignement de programmation web côté serveur, j'ai développé une application en ligne permettant à des utilisateurs la gestion de collections de films.</p>
+                         <p>Pour des raisons de manque de temps, ce projet n'a pas pu être abouti, d'où le manque dommageable d'illustrations. Il m'a néanmoins permis d'apprendre et de renforcer mes compétences en programmation web dynamique.</p>
                     </div>
                 </section>
                 <section id="action">
                     <div class="row">
-                        <div class="col-lg-3">
-                            <h2>Recherche de la méthode de cryptage</h2>
-                            <p>Nous avons recherché sur internet différents algorithmes qui nous permettraient de convertir les caractères. Parmis ceux-ci, nous avions le code de César, qui consiste en décaler les caractères de la table ASCII, et la conversion de ceux-ci en hexadécimal, en binaire, et même en morse.</p>
+                        <div class="col-lg-6">
+                            <h2>Établissement des fonctionnalités</h2>
+                            <p>Le site peut être consulté à travers trois rôles offrant chacun des fonctionnalités différentes :</p>
+                            <p>- Les simples visiteurs peuvent consulter la liste des films disponibles sur le site ainsi que le détail des informations de chacun d'entre eux. Ils peuvent se connecter, voire se créer un compte.</p>
+                            <p>- Les membres ont la possibilité, en plus de cela, de pouvoir ajouter des films à leur collection (maximum 5). Ils peuvent également accéder aux films de leur collection et en retirer. À l'inverse des visiteurs, ils ne peuvent que se déconnecter.</p>
+                            <p>- L'administrateur peut visualiser la liste des films du site ainsi que se déconnecter. Il peut également accéder à la liste des utilisateurs et en bannir un s'il le souhaite. Le compte administrateur n'est pas considéré comme un membre et n'a donc pas de collection associée.</p>
                         </div>
-                        <div class="col-lg-3 offset-lg-1">
-                            <h2>Développement</h2>
-                            <p>La page web dévelopée est très simple. En raison de nos faibles connaissances en HTML et CSS, elle n'est constituée que de deux zones de texte, dont l'une est en lecture seule, et de deux boutons.</p>
-                            <p>Un programme JavaScript, écrit pas les autres membres du groupe, a été intégré à la page et relié aux boutons. Le premier, 'Crypter', permet de retourner dans la zone du bas le message passé dans la zone du haut modifié à l'aide des algorithmes cités ci-dessus. Le second bouton, 'Décrypter', renvoie le message d'origine à partir de sa version cryptée.</p>
-                        </div>
-                        <div class="col-lg-3 offset-lg-1">
-                            <h2>Exemple</h2>
-                            <figure>
-                                <img src="images/exCryp1.PNG" width="300" height="200" alt="resultat" class="offset-lg-1"/>
-                                <figcaption>Cryptage</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="images/exCryp2.PNG" width="300" height="200" alt="resultat" class="offset-lg-1"/>
-                                <figcaption>Décryptage</figcaption>
-                            </figure>
+                        <div class="col-lg-6">
+                            <div>
+                                <h2>Programmation PHP/CodeIgniter</h2>
+                                <p>Ce projet m'a servi d'introduction au framework CodeIgniter, permettant une gestion plus aisée des pages d'un site codé en PHP impliquant de la manipulation de données. J'ai ainsi pu apprendre à utiliser cet outil et à m'adapter à son fonctionnement relativement complexe pour un débutant.</p>
+                            </div>
+                            <div>
+                                <h2>Bases de données</h2>
+                                <p>Le site s'appuyait sur une base de données permettant de stocker les informations relatives à différents films ainsi qu'aux comptes utilisateurs. Cette base a été programmée et administrée via PostgreSQL.</p>
+                            </div>
                         </div>
                     </div>
                 </section>

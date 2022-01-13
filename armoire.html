@@ -38,24 +38,23 @@
                     </div>
                 </section>
                 <section id="action">
-                    <h2>ACTIONS REALISEES</h2>
                     <div class="row">
                         <div class="col-lg-3">
-                            <h3>Elaboration du système</h3>
+                            <h2>Elaboration du système</h2>
                             <p>La structure de l'armoire est modélisée via le schéma ci-dessous.</p>
                             <p>Les compartiments en question seront chacuns disponibles à l'aide d'un code, donné via un pavé numérique. Chaque compartiment serait alors relié à un code particulier. Lorsqu'un code est saisi et validé, s'il fait partie des codes existants, les compartiments tournent afin de mettre celui demandé à disposition de l'utilisateur. Si le code rentré n'existe pas, alors un écran LCD affichera une erreur.</p>
                             <p>Nous nous sommes répartis les tâches et il a été décidé que je m'occuperai de la programmation de l'armoire.</p>
                             <img src="images/schemArm.png" width="300" height="300" alt="resultat" class="offset-lg-1"/>
                         </div>
                         <div class="col-lg-3 offset-lg-1">
-                            <h3>Simulation</h3>
+                            <h2>Simulation</h2>
                             <p>J'ai fait le choix de simuler le système à l'aide du langage de programmation Python.</p>
                             <p>Le programme en question initialise quatre codes différents ainsi que les compartiments associés, numérotés de 1 à 4. Le code est ensuite demandé à l'utilisateur qui doit en donner un. Si le code n'existe pas, le programme renvoie une erreur. Dans le cas contraire, le numéro du compartiement est affiché ainsi que le nombre de quarts de tours en sens anti-horaire nécessaires afin de mettre celui-ci à disposition.</p>
                             <p>La position de chaque compartiment est stockée dans un fichier texte mis à jour à chauqe fin de programme et rouvert dès que celui-ci est lancé. La position des compartiments est modélisée par les numéros de ceux-ci (1 à 4) placés dans l'ordre de leur emplacement par rapport à l'ouverture de l'armoire, en sens horaire. Par exemple, 2 - 3 - 4 - 1 signifie que le compartiment actuellement à disposition est le second, et que ceux qui suivent en sens horaire sont le troisière, le quatrième, et le premier.</p>
                             <p>Le nombre de quarts de tours nécessaires pour mettre à disposition le bon compartiment est calculé via la position de celui-ci. Dans le cas où le compartiment demandé se trouve en dernière position, afin d'économiser de l'énergie et du temps, le programme affichera -1, signifiant que le système doit effectuer un quart de tour dans le sens inverse.</p>
                         </div>
                         <div class="col-lg-3 offset-lg-1">
-                            <h3>Réalisation</h3>
+                            <h2>Réalisation</h2>
                             <p>Le programme devait être adapté pour une carte Arduino. C'est la raison pour laquelle j'ai choisi d'utiliser le langage C. Avant d'écrire et de tester le code sur Arduino, j'ai préféré le rédiger pour un système virtuel sur le site Tinkercad.</p>
                             <p>Cependant, en raison de ma méconnaissance du langage à l'époque et au manque de matériel, je n'ai pas pu terminer le programme dans le temps imparti, bien que cela m'ait permis d'aiguiser mon esprit logique.</p>
                             <img src="images/exReaDom2.jpg" width="250" height="300" alt="resultat" class="offset-lg-1"/>
