@@ -1,4 +1,6 @@
-
+[submodule "prj/page-web-perso"]
+  path = prj/page-web-perso
+  url = https://github.com/LeoSalaun/pageWebPerso.git
 
 [submodule "prj/page-web-personnelle"] 
   path = prj/page-web-personnelle 
