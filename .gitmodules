@@ -2,4 +2,4 @@
 
 [submodule "prj/page-web-personnelle"] 
   path = prj/page-web-personnelle 
-  url = https://github.com/LeoSalaun/pageWebPerso/runs/5514634620?check_suite_focus=true
+  url = https://github.com/LeoSalaun/pageWebPerso.git
