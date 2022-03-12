@@ -1,7 +1,17 @@
-[submodule "prj/page-web-perso"]
-  path = prj/page-web-perso
-  url = https://github.com/LeoSalaun/pageWebPerso.git
-
-[submodule "prj/page-web-personnelle"] 
-  path = prj/page-web-personnelle 
-  url = https://github.com/LeoSalaun/pageWebPerso.git
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/LeoSalaun/pageWebPerso.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "prj/page-web-personnelle"]
+	path = prj/page-web-personnelle
+	url = https://github.com/LeoSalaun/pageWebPerso.git
+	active = true
